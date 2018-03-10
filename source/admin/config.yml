@@ -11,10 +11,10 @@ collections:
     editor:
       preview: false
     file: "data/pages.yml"
+    widget: list
     fields:
       - label: "Pages"
         name: pages
-        widget: list
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Path, name: path, widget: string }
