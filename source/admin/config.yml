@@ -12,14 +12,13 @@ collections:
     editor:
       preview: false
     files:
-      - name: pages
-        label: Pages
-        label_singular: Page
+      - name: "pages"
+        label: "Pages"
         file: data/pages.yml
         fields:
           - name: pages
-          - label: Pages
-          - widget: list
-          - fields:
-            - { label: Title, name: title, widget: string }
-            - { label: Path, name: path, widget: string }
+            label: Pages
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Path, name: path, widget: string }
