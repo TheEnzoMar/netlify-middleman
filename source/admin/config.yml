@@ -8,6 +8,7 @@ media_folder: "source/images/uploads"
 collections:
   - name: settings
     label: Settings
+    delete: false
     editor:
       preview: false
     files:
@@ -15,7 +16,10 @@ collections:
         label: Pages
         label_singular: Page
         file: data/pages.yml
-        widget: list
         fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Path, name: path, widget: string }
+          - name: pages
+          - label: Pages
+          - widget: list
+          - fields:
+            - { label: Title, name: title, widget: string }
+            - { label: Path, name: path, widget: string }
