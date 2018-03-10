@@ -8,10 +8,7 @@ media_folder: "source/images/uploads"
 collections:
   - label: "Pages"
     name: "pages"
-    files:
-      - label: "About Page"
-        name: "about"
-        file: "data/about.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+    file: "data/about.yml"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Intro, name: intro, widget: markdown }
