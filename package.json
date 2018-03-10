@@ -16,5 +16,6 @@
     "build": "bundle exec middleman build",
     "dev": "bundle exec middleman server",
     "webpack": "webpack"
-  }
+  },
+  "dependencies": {}
 }
