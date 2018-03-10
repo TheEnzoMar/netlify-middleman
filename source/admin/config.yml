@@ -7,13 +7,13 @@ media_folder: "source/images/uploads"
 
 collections:
   - label: "Settings"
-    name: "settings"
+    name: settings
     editor:
       preview: false
-    files:
+    file: "data/pages.yml"
+    fields:
       - label: "Pages"
-        name: "pages"
-        file: "data/pages.yml"
+        name: pages
         widget: list
         fields:
           - { label: Title, name: title, widget: string }
