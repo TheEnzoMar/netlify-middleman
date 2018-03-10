@@ -1,0 +1,20 @@
+{
+  "name": "netlify-middleman",
+  "version": "1.0.0",
+  "author": "Enzo Marchioni",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^3.11.0"
+  },
+  "scripts": {
+    "assets:watch": "webpack --watch -d --progress --color",
+    "assets:build.dev": "webpack -d --progress --color",
+    "assets:build.prod": "webpack -p",
+    "build": "bundle exec middleman build",
+    "dev": "bundle exec middleman server",
+    "webpack": "webpack"
+  }
+}
