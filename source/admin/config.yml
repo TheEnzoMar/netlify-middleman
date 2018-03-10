@@ -6,15 +6,16 @@ backend:
 media_folder: "source/images/uploads"
 
 collections:
-  - label: "Settings"
-    name: settings
+  - name: settings
+    label: Settings
     editor:
       preview: false
-    file: "data/pages.yml"
-    widget: list
-    fields:
-      - label: "Pages"
-        name: pages
+    files:
+      - name: pages
+        label: Pages
+        label_singular: Page
+        file: data/pages.yml
+        widget: list
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Path, name: path, widget: string }
