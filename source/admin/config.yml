@@ -6,9 +6,12 @@ backend:
 media_folder: "source/images/uploads"
 
 collections:
-  - label: Author
-    name: author
-    file: data/authors.yml
-    fields:
-      - { label: Name, name: name, widget: string }
-      - { label: Email, name: email, widget: string }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "data/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
