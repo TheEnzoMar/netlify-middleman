@@ -6,12 +6,12 @@ backend:
 media_folder: "source/images/uploads"
 
 collections:
-  - label: "Navigation"
-    name: "navigation"
+  - label: "Pages"
+    name: "pages"
     files:
-      - label: "Navigation Item"
-        name: "navigation_item"
-        file: "data/navigation.yml"
+      - label: "Page"
+        name: "page"
+        file: "data/pages.yml"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Path, name: path, widget: string }
